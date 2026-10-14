@@ -1,9 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.get("/", function (req, res) {
-    res.send("Welcome to Little Help!");
-});
+app.use(express.static(__dirname + "/public"));
 
 app.get("/about", function (req, res) {
     res.send("Little Help tracks subscription spending.");
