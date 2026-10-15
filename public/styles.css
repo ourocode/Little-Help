@@ -54,3 +54,11 @@ button {
 table {
     width: 100%;
 }
+
+.tracker-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
