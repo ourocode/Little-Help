@@ -23,6 +23,50 @@
         <p>Monthly equivalent total: <span id="monthly-total">0.00</span> AED</p>
         </div>
 
+        <form id="subscription-form">
+
+            <label for="subscription-name">Service name</label>
+            <input type="text" id="subscription-name" name="subscription_name" required>
+
+            <label for="category-dropdown">Category</label>
+            <select name="Category" id="category-dropdown">
+                <option value="Video-Streaming">Video Streaming</option>
+                <option value="Music-Streaming">Music Streaming</option>
+                <option value="Fitness-Wellness">Fitness & Wellness</option>
+                <option value="Software-Productivity">Software & Productivity</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Learning-Education">Learning & Education</option>
+            </select>
+
+            <label for="cost">Cost(AED)</label>
+            <input type="number" id="cost" name="amount_per_payment"
+                   min="0.01" step="0.01" required>
+
+            <label for="frequency-dropbox">Frequency</label>
+            <select name="Frequency" id="frequency-dropbox">
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+
+            <label for="Importance-dropbox">Importance</label>
+            <select name="Importance" id="Importance-dropbox">
+                <option value="5">Essential</option>
+                <option value="4">Important</option>
+                <option value="3">Slightly Important</option>
+                <option value="2">Not Important</option>
+                <option value="1">Why Am I Paying For This?</option>
+            </select>
+
+            <label for="start-date">Start date</label>
+            <input type="date" id="start-date" name="start_date" required>
+
+            <label for="divert-to-investment">Divert To Investment</label>
+                <input type="checkbox" id="divert-to-investment"
+                       name="divert_to_investment">
+            <button type="submit">Save subscription</button>
+        </form>
+
         <div class="table-container">
             <table>
             <thead>
